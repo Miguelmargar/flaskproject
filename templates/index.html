@@ -13,7 +13,7 @@
     
     
     <main>
-        <form method="POST" action="/new">
+        <form method="POST" action="/cars">
             <input type="text" name="price" value="€10000"/>
             <input type="text" name="make" value="Honda"/>
             <input type="text" name="model" value="Civic"/>
@@ -27,17 +27,21 @@
         </form>
         
         <div>
+        <div class="row">
         {% for ad in ads_front %}
-        <p>{{ad.price}}</p>
-        <p>{{ad.make}}</p>
-        <p>{{ad.model}}</p>
-        <p>{{ad.year}}</p>
-        <p>{{ad.odomenter}}</p>
-        <p>{{ad.color}}</p>
-        <p>{{ad.location}}</p>
-        <p>{{ad.email}}</p>
-        <p>{{ad.phone}}</p>
+            <div class="col-sm-3">
+                <p>{{ad.price}}</p>
+                <p>{{ad.make}}</p>
+                <p>{{ad.model}}</p>
+                <p>{{ad.year}}</p>
+                <p>{{ad.odomenter}}</p>
+                <p>{{ad.color}}</p>
+                <p>{{ad.location}}</p>
+                <p>{{ad.email}}</p>
+                <p>{{ad.phone}}</p>
+            </div>
         {% endfor %}
+        </div>
         </div>
     </main>
     

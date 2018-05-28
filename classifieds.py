@@ -1,17 +1,18 @@
 import os
 from flask import Flask, redirect, render_template, request
+import json
+
 
 app = Flask(__name__)
 
-ads = []
-
 @app.route("/")
 def index_page():
-    return render_template("index.html", ads_front=ads)
+    loaded_ads = load_json_ads()
+    return render_template("index.html", ads_front=loaded_ads)
     
-@app.route("/new", methods=["POST"]) 
+@app.route("/cars", methods=["POST"]) 
 def create_ad():
-    
+
     price = request.form.get("price")
     make = request.form.get("make")
     model = request.form.get("model")
@@ -34,17 +35,33 @@ def create_ad():
         "phone": phone
     }
     
-    ads.append(ad)
+    ads_list = load_json_ads()
+    
+    ads_list.append(ad)
+    
+    save_json_ads(ads_list)
+    
     return redirect("/")
-# def save_ads():
-#     f = open("ad.txt", "w")
-#     f.write(ads)
-#     f.close()
+
+
+def save_json_ads(ads_list):
+    with open("savedads/ads.txt", "w") as outfile:
+        json.dump(ads_list, outfile)
+        
+def load_json_ads():
+    if os.path.isfile("savedads/ads.txt"):
+        with open("savedads/ads.txt") as json_file:
+            return json.load(json_file)
+    else:
+        return []
+        
+
+  
+
+
+
  
-# def show_ads():
-#     f = open("ad.txt", "r")                
-#     lines = f.readlines()                    
-#     f.close()  
+  
 
 
 
@@ -62,4 +79,4 @@ def create_ad():
 
 
 if __name__ == '__main__':
-    app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)))
+    app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)), debug=True)
