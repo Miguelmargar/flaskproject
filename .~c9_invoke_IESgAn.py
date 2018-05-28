@@ -3,16 +3,15 @@ from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 
-ads = []
+ads = {}
 
 @app.route("/")
 def index_page():
-    return render_template("index.html", ads_front=ads)
+    return render_template("index.html")
     
-@app.route("/new", methods=["POST"]) 
-def create_ad():
+  
+def create_ad(methods=["G"]):
     
-    price = request.form.get("price")
     make = request.form.get("make")
     model = request.form.get("model")
     year = request.form.get("year")
@@ -23,7 +22,6 @@ def create_ad():
     phone = request.form.get("phone")
     
     ad = {
-        "price": price,
         "make": make,
         "model": model,
         "year": year,
@@ -34,17 +32,14 @@ def create_ad():
         "phone": phone
     }
     
-    ads.append(ad)
-    return redirect("/")
-# def save_ads():
-#     f = open("ad.txt", "w")
-#     f.write(ads)
-#     f.close()
+    ads.update(ad)
+
+def save_ads():
+ f = open("ad.txt", "w")
+ f.write(ads)
+ f.close()
  
-# def show_ads():
-#     f = open("ad.txt", "r")                
-#     lines = f.readlines()                    
-#     f.close()  
+ 
 
 
 

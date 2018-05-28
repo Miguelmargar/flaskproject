@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>You Sell Cars</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    
+    
+    <main>
+        <form method="POST" action="/new">
+            <input type="text" name="price" value="€10000"/>
+            <input type="text" name="make" value="Honda"/>
+            <input type="text" name="model" value="Civic"/>
+            <input type="text" name="year" value="2010"/>
+            <input type="text" name="odometer" value="50000"/>
+            <input type="text" name="color" value="Black"/>
+            <input type="text" name="location" value="Dublin"/>
+            <input type="text" name="email" value="miguelitalia@hotmail.com"/>
+            <input type="text" name="phone" value="0873742699"/>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+        <div>
+        {% for ad in ads_front %}
+        <p>{{ad.price}}</p>
+        <p>{{ad.make}}</p>
+        <p>{{ad.model}}</p>
+        <p>{{ad.year}}</p>
+        <p>{{ad.odomenter}}</p>
+        <p>{{ad.color}}</p>
+        <p>{{ad.location}}</p>
+        <p>{{ad.email}}</p>
+        <p>{{ad.phone}}</p>
+        {% endfor %}
+        </div>
+    </main>
+    
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>
