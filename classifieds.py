@@ -56,26 +56,6 @@ def load_json_ads():
         return []
         
 
-  
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == '__main__':

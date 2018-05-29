@@ -1,0 +1,30 @@
+body {
+    background-color: #FBB901;
+    color: black;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.head_links {
+    float: none;
+}
+
+li {
+   padding-left: 15px; 
+   padding-top: 15px;
+}
+
+main {
+    background-color: #F38B00;
+}
+
+form {
+    background-color: #ffe800cf;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #F7B335;
+}
