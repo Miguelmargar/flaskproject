@@ -13,15 +13,15 @@ def index_page():
 @app.route("/cars", methods=["POST"]) 
 def create_ad():
 
-    price = request.form.get("price")
-    make = request.form.get("make")
-    model = request.form.get("model")
-    year = request.form.get("year")
-    odometer = request.form.get("odometer")
-    color = request.form.get("color")
-    location = request.form.get("location")
-    email = request.form.get("email")
-    phone = request.form.get("phone")
+    price       = request.form.get("price")
+    make        = request.form.get("make")
+    model       = request.form.get("model")
+    year        = request.form.get("year")
+    odometer    = request.form.get("odometer")
+    color       = request.form.get("color")
+    location    = request.form.get("location")
+    email       = request.form.get("email")
+    phone       = request.form.get("phone")
     
     ad = {
         "price": price,

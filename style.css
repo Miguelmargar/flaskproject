@@ -15,16 +15,36 @@ li {
 
 main {
     background-color: #F38B00;
+    height: Auto;
 }
 
 form {
     background-color: #ffe800cf;
 }
 
+.search {
+    padding-bottom: 15px;
+}
+
 .description{
+    margin-bottom: 0;
     padding-top: 10px;
+}
+
+.button {
+    padding-top: 29px;
+}
+
+.inbutton {
+    border-radius: 1px;
+}
+
+.ad {
+    border: 2px solid black;
+    margin-left: 20px;
 }
 
 footer {
     background-color: #F7B335;
+    padding-top: 10px;
 }
