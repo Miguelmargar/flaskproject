@@ -22,6 +22,10 @@ def create_ad():
     location    = request.form.get("location")
     email       = request.form.get("email")
     phone       = request.form.get("phone")
+    file        = request.files["image"]
+    
+    f = "static/" + os.path.join(os.path.basename("uploads"), file.filename)
+    file.save(f)
     
     ad = {
         "price": price,
@@ -32,7 +36,8 @@ def create_ad():
         "color": color,
         "location": location,
         "email": email,
-        "phone": phone
+        "phone": phone,
+        "image_path": f 
     }
     
     ads_list = load_json_ads()

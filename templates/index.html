@@ -34,7 +34,7 @@
 
 
     <main>
-        <form method="POST" action="/cars">
+        <form method="POST" action="/cars" enctype="multipart/form-data">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-2 text-center search">
@@ -64,16 +64,22 @@
                     <div class="col-sm-12 col-md-2 text-center search">
                         <p class="description">Your Phone Number:</p>
                         <input type="text" name="phone" value="0873742699" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Upload your car's photo:</p>
+                        <span class="btn btn-default btn-file">
+                            <input type="file" name="image">
+                        </span>
                     <div class="col-sm-12 col-md-2 text-center button">
                         <input type="submit" value="Submit" class="inbutton" /></div>
+                    </div>
                 </div>
-            </div>
         </form>
 
         <div>
             <div class="row text-">
                 {% for ad in ads_front %}
                 <div class="col-sm-4 text-right ad">
+                    <img src="{{ad.image_path}}" width="200" height="250"></img>
                     <p>Price: {{ad.price}}</p>
                     <p>Car Make: {{ad.make}}</p>
                     <p>Model: {{ad.model}}</p>
