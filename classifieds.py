@@ -1,6 +1,8 @@
 import os
 from flask import Flask, redirect, render_template, request
 import json
+import random
+import string
 
 
 app = Flask(__name__)
@@ -22,9 +24,16 @@ def create_ad():
     location    = request.form.get("location")
     email       = request.form.get("email")
     phone       = request.form.get("phone")
-    file        = request.files["image"]
+    file        = request.files.get("image")
     
     f = "static/" + os.path.join(os.path.basename("uploads"), file.filename)
+    
+    main_path = f[:f.find(".")]
+    extension = f[f.find("."):]
+    random_mix = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
+    
+    if os.path.exists(f):
+        f = main_path + "_" + random_mix + extension
     file.save(f)
     
     ad = {
