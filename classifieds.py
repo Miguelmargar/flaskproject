@@ -11,8 +11,13 @@ app = Flask(__name__)
 def index_page():
     loaded_ads = load_json_ads()
     return render_template("index.html", ads_front=loaded_ads)
-    
-@app.route("/cars", methods=["POST"]) 
+ 
+@app.route("/create")
+def get_create_ad():    
+    return render_template("createad.html")
+ 
+   
+@app.route("/handle_create", methods=["POST"]) 
 def create_ad():
 
     price       = request.form.get("price")

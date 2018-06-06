@@ -22,8 +22,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6 text-center">
                     <ul class="nav navbar-nav text-center head_links">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="/create">Create ad</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">How it wors</a></li>
                         <li><a href="#">Finance</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
@@ -31,42 +31,47 @@
             </div>
         </div>
     </header>
-    
+
     <main>
-        <div class="container justify underheader">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 text-center">
-                    <p>NEED TO BUY YOUR DREAM CAR?</p>
-                </div>
-                <div class="col-sm-12 col-md-6 text-center">
-                    <P>NEED TO SELL YOUR CAR?</P>
+        <form method="POST" action="/handle_create" enctype="multipart/form-data" class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Selling Price:</p>
+                        <input type="text" name="price" value="€10000" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Car Brand:</p>
+                        <input type="text" name="make" value="Honda" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Car Model:</p>
+                        <input type="text" name="model" value="Civic" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Reg Year:</p>
+                        <input type="text" name="year" value="2010" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Kms:</p>
+                        <input type="text" name="odometer" value="50000" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Car Color:</p>
+                        <input type="text" name="color" value="Black" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Location:</p>
+                        <input type="text" name="location" value="Dublin" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Your Email:</p>
+                        <input type="text" name="email" value="miguelitalia@hotmail.com" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Your Phone Number:</p>
+                        <input type="text" name="phone" value="0873742699" /></div>
+                    <div class="col-sm-12 col-md-2 text-center search">
+                        <p class="description">Upload photo:</p>
+                        <span class="btn btn-default btn-xs btn-file">
+                            <input type="file" name="image"></span></div>
+                    <div class="col-sm-12 col-md-2 col-sm-offset-2 text-center button btn-lg search">
+                        <input type="submit" value="Submit" class="inbutton" /></div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                {% for ad in ads_front %}
-                <div class="col-sm-4 ad">
-                    <div class="adimage">
-                        <span>
-                            <img src="{{ad.image_path}}" height="281" width="200"></img>
-                        </span>
-                    </div>
-                    <div class="col-sm-9 col-sm-offset-5">
-                        <p>Price: {{ad.price}}</p>
-                        <p>Car Make: {{ad.make}}</p>
-                        <p>Model: {{ad.model}}</p>
-                        <p>Reg Year: {{ad.year}}</p>
-                        <p>Kms: {{ad.odometer}}</p>
-                        <p>Car Colour: {{ad.color}}</p>
-                        <p>Location: {{ad.location}}</p>
-                        <p>Contact Email: {{ad.email}}</p>
-                        <p>Contact Number: {{ad.phone}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+        </form>
     </main>
 
 

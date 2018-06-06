@@ -18,8 +18,15 @@ main {
     height: Auto;
 }
 
-form {
+.form {
     background-color: #ffe800cf;
+}
+
+.underheader {
+    background-color: #ffe800cf;
+    font-size: 16px;
+    padding-top: 10px;
+    width: 100%;
 }
 
 .search {
@@ -42,6 +49,13 @@ form {
 .ad {
     border: 2px solid black;
     margin-left: 0px;
+    position: relative;
+}
+
+.adimage {
+    position: absolute;
+    left: 0;
+    top:0;
 }
 
 footer {
