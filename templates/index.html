@@ -34,7 +34,7 @@
 
     <main>
         <div class="underheader">
-            <div class="container justify">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 text-center">
                         <p>NEED TO BUY YOUR DREAM CAR?</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container ad">
             <div class="row">
                 {% for ad in ads_front %}
                     <div class="col-sm-6 col-md-4">
@@ -53,7 +53,7 @@
                             <img src="{{ad.image_path}}" alt="car">
                             <div class="caption">
                                 <h3>{{ad.make}} {{ad.model}}</h3>
-                                <p>Price: {{ad.price}}, Reg Year: {{ad.year}}, Kms: {{ad.odometer}}, Car Colour: {{ad.color}}, Location: {{ad.location}}, Contact Email: {{ad.email}}, Contact Number: {{ad.phone}}</p>
+                                <p>Price: {{ad.price}},  Reg Year: {{ad.year}},  Kms: {{ad.odometer}},  Car Colour: {{ad.color}},  Location: {{ad.location}},  Contact Email: {{ad.email}},  Contact Number: {{ad.phone}}</p>
                             </div>
                         </div>
                     </div>

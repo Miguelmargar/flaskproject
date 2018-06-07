@@ -1,0 +1,1 @@
+[{"make": "Tesla", "email": "miguelitalia@hotmail.com", "model": "S", "phone": "0873742699", "image_path": "static/uploads/Tesla.jpeg", "year": "2013", "price": "\u20ac100000", "color": "Black", "location": "Dublin", "odometer": "50000"}]

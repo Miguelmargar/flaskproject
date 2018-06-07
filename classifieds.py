@@ -3,7 +3,10 @@ from flask import Flask, redirect, render_template, request
 import json
 import random
 import string
+from pymongo import MongoClient
 
+MONGODB_URI = os.environ.get("MONGODB_URI")
+MONGODB_NAME = os.environ.get("MONGODB_NAME")
 
 app = Flask(__name__)
 
@@ -74,8 +77,7 @@ def load_json_ads():
     else:
         return []
         
-
-
+        
 
 if __name__ == '__main__':
     app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)), debug=True)

@@ -6,6 +6,7 @@ body {
 
 .head_links {
     float: none;
+    text-decoration: none;
 }
 
 li {
@@ -18,21 +19,20 @@ main {
     height: Auto;
 }
 
-.form {
-    background-color: #ffe800cf;
-}
-
-
 .underheader {
     background-color: #ffe800cf;
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 10px;
     width: 100%;
 }
 
-img {
-    width: 100%;
-    height: 200px;
+.ad {
+    padding-top: 15px;
+}
+
+.thumbnail {
+    background-color: #FBB901;
+    border: 2px solid black;
 }
 
 .search {
@@ -50,18 +50,6 @@ img {
 
 .inbutton {
     border-radius: 1px;
-}
-
-.ad {
-    border: 2px solid black;
-    margin-left: 0px;
-    position: relative;
-}
-
-.adimage {
-    position: absolute;
-    left: 0;
-    top:0;
 }
 
 footer {
