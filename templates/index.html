@@ -50,7 +50,9 @@
                 {% for ad in ads_front %}
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
+                            <div class="carphoto">
                             <img src="{{ad.image_path}}" alt="car">
+                            </div>
                             <div class="caption">
                                 <h3>{{ad.make}} {{ad.model}}</h3>
                                 <p>Price: {{ad.price}},  Reg Year: {{ad.year}},  Kms: {{ad.odometer}},  Car Colour: {{ad.color}},  Location: {{ad.location}},  Contact Email: {{ad.email}},  Contact Number: {{ad.phone}}</p>
