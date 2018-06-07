@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index_page():
-    loaded_ads = load_json_ads()
+    loaded_ads = load_mongo_ads()
     return render_template("index.html", ads_front=loaded_ads)
  
 @app.route("/create")
@@ -57,22 +57,25 @@ def create_ad():
         "image_path": f 
     }
     
-    ads_list = load_json_ads()
+    ads_list = load_mongo_ads()
     
     ads_list.append(ad)
     
-    save_json_ads(ads_list)
+    save_to_mongo(ad)
     
     return redirect("/")
 
 
-def save_json_ads(ads_list):
-    with open("savedads/ads.txt", "w") as outfile:
-        json.dump(ads_list, outfile)
+def save_to_mongo(ads_list):
+    with MongoClient(MONGO_URI) as conn:
+       db = conn[MONGODB_NAME]
+       collection = db[cars]
+       collection.insert({ad})
         
-def load_json_ads():
-    if os.path.isfile("savedads/ads.txt"):
-        with open("savedads/ads.txt") as json_file:
+def load_mongo_ads():
+    with MongoClient(MONGO_URI) as conn:
+       db = conn[MONGODB_NAME]
+       collection = db[cars]
             return json.load(json_file)
     else:
         return []
