@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="../static/style.css" type="text/css" />
     <title>You Sell Cars</title>
 </head>
@@ -22,10 +23,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6 text-center">
                     <ul class="nav navbar-nav text-center head_links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">How it wors</a></li>
-                        <li><a href="#">Finance</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="/" class="hvr-underline-from-center">Home</a></li>
+                        <li><a href="#" class="hvr-underline-from-center">How it wors</a></li>
+                        <li><a href="https://personalbanking.bankofireland.com/borrow/loans/car-loan/features-benefits/" class="hvr-underline-from-center">Car Finance</a></li>
+                        <li><a href="#" class="hvr-underline-from-center">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,6 +34,16 @@
     </header>
 
     <main>
+        <div class="underheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>Create your ad below <span class="fas fa-arrow-alt-circle-down"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <form method="POST" action="/handle_create" enctype="multipart/form-data" class="form">
             <div class="container">
                 <div class="row">

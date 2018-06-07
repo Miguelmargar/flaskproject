@@ -10,8 +10,28 @@ body {
 }
 
 li {
-   padding-left: 15px; 
-   padding-top: 15px;
+    padding-left: 15px; 
+    padding-top: 15px;
+}
+
+.nav li a {
+    background-color: #FBB901;
+    color: black;
+}
+
+.nav li a:hover {
+    background-color: #FBB901;
+    color: red;
+}
+
+.nav li a:visited {
+    background-color: #FBB901;
+    color: black;
+}
+
+.nav li a:active {
+    background-color: #FBB901;
+    color: black;
 }
 
 main {
@@ -40,11 +60,9 @@ div.thumbnail img {
     width: 382px;
 }
 
-
-/*.carphoto {*/
-/*    height:257px;*/
-/*    width: 382px;*/
-/*}*/
+div.thumbnail img:hover {
+    opacity: 0.9;
+}
 
 .search {
     padding-bottom: 15px;

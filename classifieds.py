@@ -13,7 +13,6 @@ app = Flask(__name__)
 @app.route("/")
 def index_page():
     loaded_ads = load_ads()
-    print(loaded_ads)
     return render_template("index.html", ads_front=loaded_ads)
  
 @app.route("/create")
