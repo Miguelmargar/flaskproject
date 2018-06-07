@@ -35,10 +35,16 @@ main {
     border: 2px solid black;
 }
 
-.carphoto {
-    height:257px;
+div.thumbnail img {
+    height: 257px;
     width: 382px;
 }
+
+
+/*.carphoto {*/
+/*    height:257px;*/
+/*    width: 382px;*/
+/*}*/
 
 .search {
     padding-bottom: 15px;
