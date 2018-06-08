@@ -18,14 +18,13 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
  
 ### Existing Features
 - Eye catching front page with no clutter
-  - Sliding picture box
-- Information page.
-  - Sidebar to navigate to different parts of the information
-- Media page with plenty of pictures and a video
-- Links page to other sites with information about Hippopotami
-- Quiz page for viewers to test their knowledge
-    - Form for viewers to input their answers or check the correct box
-    - Submit button so viewers can see how they scored on the quiz
+- Display of adds created by the user
+- link to page with simple explanation for user to get started either at buying or selling a car
+- Contact us page with form for user to send message.
+- Navigation bar to navigate to different pages
+- Link page to financial provider site in order to obtain car finance
+- Form for viewers to input the details of the car they wish to sell
+- Once create ad form is filled in ad shows in index page with the use redirected automatically to the index page
 
 ### Features Left to Implement
 - None
@@ -35,21 +34,24 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 ### Some the tech used includes:
 - **HTML**, **CSS** and **Javascript**
   - Base languages used to create website
-- [AngularJS](https://angularjs.org/)
+- [Flask](http://flask.pocoo.org/)
     - We use **AngularJS** to handle page routing and to build custom directives
 - [Bootstrap](http://getbootstrap.com/)
     - We use **Bootstrap** to give our project a simple, responsive layout
-- [JQuery](https://jquery.com)
-    - Use **JQuery** for boostrap and displaying modal
+- [Hover.css](http://ianlunn.github.io/Hover/)
+    - use hover.css to obtain the underline in the navbar links
+- [Google Fonts](https://fonts.google.com/)
+    - use of google font "Luckiest Guy"
+- [Font Awsome](https://fontawesome.com/)
+    - Font Awsome has been used for the icons in all the pages
 
 ## Testing
+- links have been manually tested
 - Prototype code was written and tested using jasmine
 - All code used on the site has been tested to ensure everything is working as expected
 - Site viewed and tested in the following browsers:
   - Google Chrome
-  - Opera
   - Microsoft Edge
-  - Mozilla Firefox
 
 ## Contributing
  
@@ -65,10 +67,8 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 ## Credits
 
 ### Media
-- The photos used in this site were obtained from [Pixabay](https://pixabay.com/)
-- The video used on this site belongs to Nat Geo Wild channel on [youtube](https://www.youtube.com/watch?v=WfrG95GyU9U)
+- The images used in this site were obtained from the images section in [Google search of: disney cars banners](https://google.ie/)
+- The images used in the example ads were obtained from the images section in [Google search of: cars](https://google.ie/)
 
 ### Information
-- The information used to create this site was from a number of sources
-    - Wikipedia webpage on [Hippos](https://en.wikipedia.org/wiki/Hippopotamus) and [Pygmy Hippos](https://en.wikipedia.org/wiki/Pygmy_hippopotamus)
-    - The African Wildlife Foundation [website](http://www.awf.org/wildlife-conservation/hippopotamus)
+- Any information displayed in this website is fictional and aleatory with no resemblance to the real world. If any information happens to be real, this is purely coincidential and unintentional. 

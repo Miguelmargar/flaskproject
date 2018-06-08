@@ -108,7 +108,11 @@ footer {
     padding-top: 10px;
 }
 
-/*Contact us form*/
+.red {
+    color: red;
+}
+
+/*Contact us form-----------------------------*/
 
 .contact-form {
     border: 2px solid black;
@@ -117,9 +121,9 @@ footer {
 
 .required {
     margin: 10px;
+}
+
+inputborder {
     border-radius: 5px;
 }
 
-input {
-    size: 25;
-}
