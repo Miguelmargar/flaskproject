@@ -19,6 +19,13 @@ def index_page():
 def get_create_ad():    
     return render_template("createad.html")
  
+@app.route("/howitworks")
+def howitworks():
+    return render_template("howworks.html")
+    
+@app.route("/contactus")
+def contactus():
+    return render_template("contactus.html")
    
 @app.route("/handle_create", methods=["POST"]) 
 def create_ad():

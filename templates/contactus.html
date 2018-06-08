@@ -38,55 +38,65 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <p>Create your ad below <span class="fas fa-arrow-alt-circle-down"></span></p>
+                        <p>Contact Us <span class="fas fa-arrow-alt-circle-down"></span></p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <form method="POST" action="/handle_create" enctype="multipart/form-data" class="form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Selling Price:</p>
-                        <input type="text" name="price" value="€100000" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Car Brand:</p>
-                        <input type="text" name="make" value="Tesla" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Car Model:</p>
-                        <input type="text" name="model" value="S" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Reg Year:</p>
-                        <input type="text" name="year" value="2013" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Kms:</p>
-                        <input type="text" name="odometer" value="50000" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Car Color:</p>
-                        <input type="text" name="color" value="Black" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Location:</p>
-                        <input type="text" name="location" value="Dublin" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Your Email:</p>
-                        <input type="text" name="email" value="miguelitalia@hotmail.com" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Your Phone Number:</p>
-                        <input type="text" name="phone" value="0873742699" /></div>
-                    <div class="col-sm-12 col-md-2 text-center search">
-                        <p class="description">Upload photo:</p>
-                        <span class="btn btn-default btn-xs btn-file">
-                            <input type="file" name="image"></span></div>
-                    <div class="col-sm-12 col-md-2 col-sm-offset-2 text-center button btn-lg search">
-                        <input type="submit" value="Submit" class="inbutton" /></div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-form">
+                        <div>
+                            <h1>Nice to Meet You!</h1>
+                            <h4>Have a question or just want to get in touch? Let's chat.</h4>
+                        </div>
+
+                        <form>
+                            <div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+		                              	<p class="required">Name:</p> 
+		      	                </div>
+                            </div>
+		                  	<div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+		      	                    <input type="text" class="required" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      	               </div>
+                            </div>
+                                
+                            <div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+		      	<p class="required">Email:</p>
+		      	<input type="email" class="required" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+		      <p class="required">Subject: </p>
+			      <select class="required" name="subject" tabindex="3">   
+			         <option value="general">General</option>
+			         <option value="buying">Buying</option>  
+			         <option value="selling">Selling</option>
+			      </select>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+		      	<p class="required">Message:</p> 
+		      	<textarea class="required" name="message" placeholder="Please write your message here." tabindex="5" rows="10" cols="19" required="required"></textarea> 
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-sm-2 col-sm-offset-5">
+                                    <button name="submit" type="submit" class="required">SEND</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </form>
-        <div class="cartoon">
         </div>
-        
-        
     </main>
 
 
@@ -97,7 +107,8 @@
                     <p>Design by &copy Miguel Martinez Garcia</p>
                 </div>
                 <div class="col-sm-12 col-md-6 text-center">
-                    <p class="footerlast">Follow us on: <span class="fab fa-facebook-square hvr-grow"></span> <span class="fab fa-facebook-messenger hvr-grow"></span> <span class="fab fa-google-plus-square hvr-grow"></span> <span class="fab fa-linkedin hvr-grow"></span> <span class="fab fa-skype hvr-grow"></span>
+                    <p class="footerlast">Follow us on: <span class="fab fa-facebook-square hvr-grow"></span> <span class="fab fa-facebook-messenger hvr-grow"></span> <span class="fab fa-google-plus-square hvr-grow"></span> <span class="fab fa-linkedin hvr-grow"></span>
+                        <span class="fab fa-skype hvr-grow"></span>
                         <span class="fab fa-snapchat hvr-grow"></span> <span class="fab fa-twitter hvr-grow"></span></p>
                 </div>
             </div>

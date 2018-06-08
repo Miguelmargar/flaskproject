@@ -107,3 +107,19 @@ footer {
 .instructions {
     padding-top: 10px;
 }
+
+/*Contact us form*/
+
+.contact-form {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.required {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+input {
+    size: 25;
+}
