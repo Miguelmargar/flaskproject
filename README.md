@@ -33,7 +33,7 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 - **HTML**, **CSS** and **Javascript**
   - Base languages used to create website
 - [Flask](http://flask.pocoo.org/)
-    - We use **AngularJS** to handle page routing and to build custom directives
+    - We use **Flask** to handle page routing and to build custom directives
 - [Bootstrap](http://getbootstrap.com/)
     - We use **Bootstrap** to give our project a simple, responsive layout
 - [Hover.css](http://ianlunn.github.io/Hover/)
@@ -50,19 +50,21 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 - Site viewed and tested in the following browsers:
   - Google Chrome
   - Microsoft Edge
-
-## Contributing
  
-### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** installed
-  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
-5. Once **http-server** is installed run ```http-server -c-1```
-6. The project will now run on [localhost](http://127.0.0.1:8080)
-7. Make changes to the code and if you think it belongs in here then just submit a pull request
+Automated tests can be viewed in the tests.py.
+To run the tests, in your terminal activate your virtual environment and type:
 
-## Credits
+`$ python3 manage.py test.py` - 4 tests will all pass
+    -   Tests check that redirect to the different pages work
+
+## Deployment / Hosting
+
+This Project was deployed and is hosted on Heroku with automatic deploys from GitHub
+
+## Databases / Static Files
+
+Images uploaded by the users are stored within the subfolder of the main app folder called uploads which is in turn a subfolder of the main app folder.
+Car information uploaded by the user is stored in a mongodb database
 
 ### Media
 - The images used in this site were obtained from the images section in [Google search of: disney cars banners](https://google.ie/)
@@ -70,5 +72,5 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 
 ### Acknowledgements
 
-- I received inspiration for this project from https://bakealiciousbygabriela.com.au/, https://pressup.ie/ and as this was going to be a classified adds project decided to include a yellow based color scheme trying to resemble that of the yellow pages. 
+- I received inspiration for this project from https://pressup.ie/ and as this was going to be a classified adds project decided to include a yellow based color scheme trying to resemble that of the yellow pages but adding different tonalities of yellows. 
 - Would like to give a special thank you to Richard Dalton, Katie Maxwell and all my colleges from class at Code Institute 
