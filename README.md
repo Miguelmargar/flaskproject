@@ -26,8 +26,6 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 - Form for viewers to input the details of the car they wish to sell
 - Once create ad form is filled in ad shows in index page with the use redirected automatically to the index page
 
-### Features Left to Implement
-- None
 
 ## Tech Used
 
@@ -70,5 +68,7 @@ The site is styled with **Bootstrap**. The website uses the **python** language 
 - The images used in this site were obtained from the images section in [Google search of: disney cars banners](https://google.ie/)
 - The images used in the example ads were obtained from the images section in [Google search of: cars](https://google.ie/)
 
-### Information
-- Any information displayed in this website is fictional and aleatory with no resemblance to the real world. If any information happens to be real, this is purely coincidential and unintentional. 
+### Acknowledgements
+
+- I received inspiration for this project from https://bakealiciousbygabriela.com.au/, https://pressup.ie/ and as this was going to be a classified adds project decided to include a yellow based color scheme trying to resemble that of the yellow pages. 
+- Would like to give a special thank you to Richard Dalton, Katie Maxwell and all my colleges from class at Code Institute 
