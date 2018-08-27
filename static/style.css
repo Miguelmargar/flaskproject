@@ -57,7 +57,7 @@ main {
 
 div.thumbnail img {
     height: 257px;
-    width: 382px;
+    width: 100%;
 }
 
 div.thumbnail img:hover {
